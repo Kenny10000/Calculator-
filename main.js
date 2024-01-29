@@ -61,3 +61,9 @@ function deleteOne(){
 function deleteAll(){
     document.getElementById("display").value = "";
 }
+
+function calculate(){
+    let expresstion = document.getElementById("display").value;
+    const result = eval(expresstion);
+    document.getElementById("display").value = result;
+}
