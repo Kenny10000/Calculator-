@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+
+<section>
+    <div class="calculator">
+<form>
+<input type="text" placeholder="calculator" id="display">
+</form>
+        <div class="buttons">
+        <input type="button" value="*" class="btn btn-yellow" onclick="displaynum('*')">
+        <input type="button" value="/" class="btn btn-yellow" onclick="displaynum('/')">
+        <input type="button" value="-" class="btn btn-yellow" onclick="displaynum('-')">
+        <input type="button" value="+" class="btn btn-yellow" onclick="displaynum('+')">
+
+        <input type="button" value="9" class="btn btn-grey" onclick="displaynum('9')">
+        <input type="button" value="8" class="btn btn-grey" onclick="displaynum('8')">
+        <input type="button" value="7" class="btn btn-grey" onclick="displaynum('7')">
+        <input type="button" value="6" class="btn btn-grey" onclick="displaynum('6')">
+        <input type="button" value="5" class="btn btn-grey" onclick="displaynum('5')">
+        <input type="button" value="4" class="btn btn-grey" onclick="displaynum('4')">
+        <input type="button" value="3" class="btn btn-grey" onclick="displaynum('3')">
+        <input type="button" value="2" class="btn btn-grey" onclick="displaynum('2')">
+        <input type="button" value="1" class="btn btn-grey" onclick="displaynum('1')">
+        <input type="button" value="0" class="btn btn-grey" onclick="displaynum('0')">
+        <input type="button" value="." class="btn btn-grey" onclick="displaynum('.')">
+        <input type="button" value="0" class="btn btn-grey" onclick="displaynum('0')">
+        <input type="button" value="00" class="btn btn-grey" onclick="displaynum('00')">
+
+
+     
+        <input type="button" value="DE" class="btn btn-clear" onclick="deleteOne()">
+        <input type="button" value="AC" class="btn btn-clear" onclick="deleteAll()">
+        <input type="button" value="=" class="btn btn-equal" onclick="calculate()">
+
+    </div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>

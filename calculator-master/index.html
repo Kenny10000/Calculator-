@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="big">
+        <div class="small">
+            <form>
+                <div class="display-screens">
+                    <div class="screen1">
+                        <input type="text" id="history" value="Ans" disabled>
+                    </div>
+                    <div class="screen2">
+                        <input type="text" id="display" value="0">
+                    </div>
+                </div>
+                
+
+
+                <div class="btns">
+                    <button class="sym" type="button" value="Rad">Rad</button>
+                    <button class="sym" type="button" value="Deg">Deg</button>
+                    <button class="sym" type="button" value="x!">x!</button>
+                    <button class="sym" type="button" value="(">(</button>
+                    <button class="sym" type="button" value=")">)</button>
+                    <button class="sym" type="button" value="%">%</button>
+                    <button class="symbol" type="button" value="AC" id="ac" onclick="clr('0')">AC</button>
+                </div>
+
+                <div class="btns">
+                    <button class="sym" type="button" value="lnv">lnv</button>
+                    <button class="sym" type="button" value="sin">sin</button>
+                    <button class="sym" type="button" value="ln">ln</button>
+                    <button class="nom" type="button" value="7" onclick="show('7')">7</button>
+                    <button class="nom" type="button" value="8" onclick="show('8')">8</button>
+                    <button class="nom" type="button" value="9" onclick="show('9')">9</button>
+                    <button class="symbol" type="button" value="÷" onclick="operator('/')">÷</button>
+                </div>
+
+                <div class="btns">
+                    <button class="sym" type="button" value="π">π</button>
+                    <button class="sym" type="button" value="cos">cos</button>
+                    <button class="sym" type="button" value="log">log</button>
+                    <button class="nom" type="button" value="4" onclick="show('4')">4</button>
+                    <button class="nom" type="button" value="5" onclick="show('5')">5</button>
+                    <button class="nom" type="button" value="6" onclick="show('6')">6</button>
+                    <button class="symbol" type="button" value="×" onclick="operator('*')">x</button>
+                </div>
+
+                <div class="btns">
+                    <button class="sym" type="button" value="e">e</button>
+                    <button class="sym" type="button" value="tan">tan</button>
+                    <button class="sym" type="button" value="√" onclick="squareRoot()">√</button>
+                    <button class="nom" type="button" value="1" onclick="show('1')">1</button>
+                    <button class="nom" type="button" value="2" onclick="show('2')">2</button>
+                    <button class="nom" type="button" value="3" onclick="show('3')">3</button>
+                    <button class="symbol" type="button" value="-" onclick="operatorMinus('-')">-</button>
+                </div>
+
+                <div class="btns">
+                    <button class="sym" type="button" value="Ans">Ans</button>
+                    <button class="sym" type="button" value="EXP">EXP</button>
+                    <button class="sym" type="button" value="xy">xy</button>
+                    <button class="nom" type="button" value="0" onclick="show('0')">0</button>
+                    <button class="nom" type="button" value="." onclick="dot('.')">.</button>
+                    <button class="diff" type="button" value="=" onclick="cal()">=</button>
+                    <button class="symbol" type="button" value="+" onclick="operator('+')">+</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
